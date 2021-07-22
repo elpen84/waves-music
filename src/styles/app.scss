@@ -2,7 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Bebas Neue';
+}
+h1,h2,h3 {
+    color: rgb(53,53,53);
 }
 
 @import "./song";
 @import  "./player";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
