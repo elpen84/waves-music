@@ -4,25 +4,28 @@
   left: 0;
   width: 20rem;
   height: 100%;
-  background: rgb(88, 95, 95);
+  background: white;
+  //background: rgb(88, 95, 95);
   box-shadow: 2px 2px 50px rgb(204, 204, 204);
+  transition: all 0.5s ease;
   overflow: scroll;
   h2 {
       padding: 2rem;
   }
 }
 
-.library-songs {
+.library-song {
 display: flex;
 align-items: center;
-flex-direction: column;
+
 padding: 1rem 2rem 1rem 2rem;;
 cursor: pointer;
+transition: all 0.75s ease-out;
 img {
     width: 30%;
     }
     &:hover {
-        background: rgb(255, 255, 204);
+        background: rgb(235, 235, 235);
     }
 }
 
