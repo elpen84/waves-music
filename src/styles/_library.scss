@@ -4,7 +4,7 @@
   left: 0;
   width: 20rem;
   height: 100%;
-  background: white;
+  background: rgba(#f2f3f4, 1);
   //background: rgb(88, 95, 95);
   box-shadow: 2px 2px 50px rgb(204, 204, 204);
   transition: all 0.5s ease;
@@ -17,7 +17,7 @@
 .library-song {
 display: flex;
 align-items: center;
-
+background: rgba(#f2f3f4, 1);
 padding: 1rem 2rem 1rem 2rem;;
 cursor: pointer;
 transition: all 0.75s ease-out;
