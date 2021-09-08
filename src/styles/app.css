@@ -170,4 +170,8 @@ h3, h4 {
   border-radius: 20px;
   border: transparent;
 }
+
+.selected {
+  background: violet;
+}
 /*# sourceMappingURL=app.css.map */
