@@ -27,9 +27,16 @@ const Player = ({audioRef,currentSong, setCurrentSong, isPlaying, setIsPlaying, 
     }
 
     const skipTraceHandler = (direction) => {
-            let songIndex = song.findIndex((song) => song.id === currentSong.id);
+            let currentIndex = songs.findIndex((song) => song.id === currentSong.id);
             if(direction === 'skip-forward') {
-                setCurrentSong(songs[(currentSong+ 1) % songs.length]);
+                setCurrentSong(songs[(currentIndex+ 1) % songs.length]);
+            }
+            if(direction === 'skip-back')  {
+                if((currentIndex - 1) % songs.length === -1) {
+                    setCurrentSong(songs[songs.length - 1]);
+                    return;
+                }
+                setCurrentSong(songs[(currentIndex - 1) % songs.length]);
             }
     }
   
