@@ -4,7 +4,8 @@ import Song from  "./components/Song";
 import Library from  "./components/Library";
 import Nav from './components/Nav';
 import './styles/app.scss';
-//import util
+import util from './util'
+//import data
 import chillHop from "./data";
 
 function App() {
